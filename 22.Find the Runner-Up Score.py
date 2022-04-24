@@ -1,0 +1,6 @@
+n = int(input())
+mapped = map(int, input().split())
+arr = list(mapped)
+arr.sort()
+arr = list(dict.fromkeys(arr))
+print(arr[len(arr)-2])
